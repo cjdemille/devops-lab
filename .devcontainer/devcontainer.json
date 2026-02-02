@@ -1,7 +1,11 @@
 {
     "name": "devops-lab",
-    "build": { "dockerfile": "Dockerfile" },
-    "features": {},
-    "postCreateCommand": "terraform --version && kubectl version --client && aws --version"
+    "build": {
+      "dockerfile": "Dockerfile"
+    },
+    "features": {
+      "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+    },
+    "postCreateCommand": "terraform --version && kubectl version --client && aws --version && docker --version"
   }
   
