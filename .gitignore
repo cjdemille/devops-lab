@@ -4,3 +4,9 @@ terraform.tfstate*
 .terraform/
 .DS_Store
 .vscode/settings.json
+node_modules/
+npm-debug.log
+*.tar
+.DS_Store
+.vscode/
+kubeconfig
