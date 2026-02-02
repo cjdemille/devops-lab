@@ -1,0 +1,7 @@
+{
+    "name": "devops-lab",
+    "build": { "dockerfile": "Dockerfile" },
+    "features": {},
+    "postCreateCommand": "terraform --version && kubectl version --client && aws --version"
+  }
+  
