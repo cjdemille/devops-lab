@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: devops-lab-node
+  namespace: devops-lab
+spec:
+  selector:
+    app: devops-lab-node
+  ports:
+    - port: 80
+      targetPort: 3000
